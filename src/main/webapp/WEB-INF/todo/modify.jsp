@@ -24,7 +24,7 @@
         <input type="date" name="dueDate" value="${dto.dueDate}">
     </div>
     <div>
-        <input type="checkbox" name="finished" ${dto.finished ? "checked": ""} >
+        <input type="checkbox" name="finished" ${dto.finished ? "checked": " "} >
     </div>
 
     <div>

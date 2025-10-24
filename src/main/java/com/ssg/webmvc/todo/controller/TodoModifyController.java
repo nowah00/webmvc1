@@ -1,4 +1,4 @@
-package com.ssg.webmvc.controller;
+package com.ssg.webmvc.todo.controller;
 
 import com.ssg.webmvc.todo.dto.TodoDTO;
 import com.ssg.webmvc.todo.service.TodoService;

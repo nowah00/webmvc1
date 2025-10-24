@@ -1,4 +1,4 @@
-package com.ssg.webmvc.controller;
+package com.ssg.webmvc.todo.controller;
 
 import com.ssg.webmvc.todo.dto.TodoDTO;
 import com.ssg.webmvc.todo.service.TodoService;
@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -25,9 +26,13 @@ public class TodoRegisterController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         log.info("/todo/register GET .......");
-        req.getRequestDispatcher("/WEB-INF/todo/register.jsp").forward(req,resp);
+
+        req.getRequestDispatcher("/WEB-INF/todo/register.jsp").forward(req, resp);
+
 
     }
+
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

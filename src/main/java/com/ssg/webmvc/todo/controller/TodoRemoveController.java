@@ -1,4 +1,4 @@
-package com.ssg.webmvc.controller;
+package com.ssg.webmvc.todo.controller;
 
 import com.ssg.webmvc.todo.service.TodoService;
 import lombok.extern.log4j.Log4j2;
